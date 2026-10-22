@@ -134,15 +134,15 @@ Adicione capturas de tela demonstrando:
 
 **Imagem 2 – Formulário de cadastro**
 
-[Inserir imagem]
+![Formulario de Cadastro](./fotos/{14769E59-D8AC-4CFA-9AA7-859059DA6623}.png)
 
 **Imagem 3 – Cadastro funcionando**
 
-[Inserir imagem]
+![Foto cadastro](./fotos/{40EC9369-CC2B-4415-869D-5D33A08BA679}.png)
 
 **Imagem 4 – Registro inserido no banco de dados**
 
-[Inserir imagem]
+![Banco de dados](./fotos/{56D30375-BD16-4554-9798-9FE11DF17D17}.png)
 
 ## 8. Repositórios
 
@@ -155,9 +155,17 @@ Adicione capturas de tela demonstrando:
 Explique com suas palavras:
 
 - Como funciona a comunicação entre o Front-End e o Back-End?
+
+- R: O Front-End envia uma requisição (request) pedindo dados ao Back-End, que processa a informação e devolve uma resposta (response) em formato JSON para a tela ser atualizada.
+
 - Qual é a finalidade do método POST?
+- R: A finalidade principal do método POST é enviar dados do Front-End para o Back-End para criar um novo recurso no servidor (como cadastrar um usuário, enviar uma mensagem ou fazer um pedido).
+
 - Por que utilizamos `async/await` e `try/catch`?
+- R: O async/await faz o código esperar a resposta da API antes de continuar, tornando a leitura sequencial e simples, enquanto o try/catch captura eventuais erros de conexão ou do servidor para evitar que a aplicação quebre.
+
 - Quais dificuldades você encontrou durante a atividade?
+- R: Fazer a ligação do banco de dados com o back-end
 
 [Escreva sua conclusão aqui.]
 
