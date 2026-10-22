@@ -130,7 +130,7 @@ Adicione capturas de tela demonstrando:
 
 **Imagem 1 – Tela de listagem**
 
-[Inserir imagem]
+[!Listagem](./fotos/{8DB75EEE-87F1-4886-AA53-F4D27AEE5212}.png)
 
 **Imagem 2 – Formulário de cadastro**
 
