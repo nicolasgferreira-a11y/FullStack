@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: radial-gradient(circle at top right, #2c1a11 0%, #17100b 100%);
+    background-attachment: fixed;
+    color: #f3f4f6;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Container com efeito de vidro luxuoso */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 36px;
+    background: rgba(38, 26, 18, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(217, 119, 6, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Cabeçalhos e Títulos */
+.cabecalho, .acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.85rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fef3c7 0%, #d97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #f3f4f6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(217, 119, 6, 0.3);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    background: rgba(18, 12, 8, 0.6);
+    transition: all 0.25s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f59e0b;
+    background: rgba(18, 12, 8, 0.9);
+    box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
+}
+
+/* Botões com Gradientes Elegantes */
+button, .botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+    transition: all 0.2s ease;
+}
+
+button:hover, .botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 119, 6, 0.45);
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+button:active, .botao:active {
+    transform: translateY(0);
+}
+
+.secundario {
+    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.secundario:hover {
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.perigo {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
+}
+
+.perigo:hover {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.45);
+}
+
+/* Espaçamento de Ações */
+.acoes {
+    justify-content: flex-start;
+    margin-top: 28px;
+}
+
+/* Tabela Estilizada */
+.tabela-container {
+    overflow-x: auto;
+    margin-top: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 119, 6, 0.2);
+    background: rgba(18, 12, 8, 0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.95rem;
+}
+
+th {
+    background: rgba(217, 119, 6, 0.15);
+    color: #fef3c7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.acoes-tabela {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Mensagens de Alerta/Status */
+#mensagem {
+    min-height: 24px;
+    margin-top: 12px;
+    color: #f87171;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
